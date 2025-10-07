@@ -1,4 +1,6 @@
-package iuh.fit.oop;
+package iuh.fit.oop.manager;
+
+import iuh.fit.oop.entity.Employees;
 
 public class EmployeesManager {
 	private Employees[] employees;

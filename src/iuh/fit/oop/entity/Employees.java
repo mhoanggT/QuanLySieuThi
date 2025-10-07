@@ -1,23 +1,19 @@
-package iuh.fit.oop;
+package iuh.fit.oop.entity;
 
-import java.time.LocalDate;
-
-public class Customer {
+public class Employees {
 	private String id;
 	private String name;
+	private Role role;
 	private Gender gender;
-	private String phone;
-	private LocalDate birthday;
 	
-	public Customer() {
+	public Employees() {
 	}
 
-	public Customer(String id, String name, Gender gender, String phone, LocalDate birthday) {
+	public Employees(String id, String name, Role role, Gender gender) {
 		setId(id);
 		setName(name);
+		setRole(role);
 		setGender(gender);
-		setPhone(phone);
-		setBirthday(birthday);
 	}
 
 	public String getId() {
@@ -42,6 +38,17 @@ public class Customer {
 		this.name = name;
 	}
 
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		if(role == null) {
+			throw new IllegalArgumentException("Invalid role");
+		}
+		this.role = role;
+	}
+
 	public Gender getGender() {
 		return gender;
 	}
@@ -53,36 +60,13 @@ public class Customer {
 		this.gender = gender;
 	}
 
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhone(String phone) {
-		if(phone == null | !phone.matches("^0\\d{9}$")) {
-			throw new IllegalArgumentException("Phone number must have 10 digits,starting with 0");
-		}
-		this.phone = phone;
-	}
-
-	public LocalDate getBirthday() {
-		return birthday;
-	}
-
-	public void setBirthday(LocalDate birthday) {
-		if(birthday == null || birthday.isAfter(LocalDate.now())) {
-			throw new IllegalArgumentException("Invalid birthday");
-		}
-		this.birthday = birthday;
-	}
-
 	@Override
 	public String toString() {
 		return String.format("| %s10 | %s20 | %f10 | %d10 | %s10 |",
 				id,
 				name,
-				gender,
-				phone,
-				birthday);
+				role,
+				gender);
 	}
 	
 	

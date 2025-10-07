@@ -1,4 +1,6 @@
-package iuh.fit.oop;
+package iuh.fit.oop.manager;
+
+import iuh.fit.oop.entity.Products;
 
 public class ProductManager {
 	private Products[] products;
