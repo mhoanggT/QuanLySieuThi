@@ -1,8 +1,13 @@
-package iuh.fit.oop;
+package iuh.fit.oop.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import iuh.fit.oop.entity.Employee;
+import iuh.fit.oop.entity.Gender;
+import iuh.fit.oop.entity.Role;
+import iuh.fit.oop.manager.EmployeeManager;
 
 public class EmployeeManagerTester {
 

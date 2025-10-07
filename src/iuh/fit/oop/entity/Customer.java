@@ -1,4 +1,4 @@
-package iuh.fit.oop;
+package iuh.fit.oop.entity;
 
 import java.time.LocalDate;
 

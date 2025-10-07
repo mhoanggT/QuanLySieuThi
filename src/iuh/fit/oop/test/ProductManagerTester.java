@@ -1,8 +1,12 @@
-package iuh.fit.oop;
+package iuh.fit.oop.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import iuh.fit.oop.entity.Product;
+import iuh.fit.oop.entity.ProductType;
+import iuh.fit.oop.manager.ProductManager;
 
 public class ProductManagerTester {
 

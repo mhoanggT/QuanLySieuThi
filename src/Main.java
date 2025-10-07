@@ -1,7 +1,8 @@
-package iuh.fit.oop;
-
 import java.time.LocalDate;
 import java.util.Scanner;
+
+import iuh.fit.oop.manager.*;
+import iuh.fit.oop.entity.*;
 
 public class Main {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package iuh.fit.oop;
+package iuh.fit.oop.entity;
 
 public class Product {
 	private String id;

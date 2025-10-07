@@ -1,10 +1,14 @@
-package iuh.fit.oop;
+package iuh.fit.oop.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.LocalDate;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import iuh.fit.oop.entity.Customer;
+import iuh.fit.oop.entity.Gender;
+import iuh.fit.oop.manager.CustomerManager;
 
 public class CustomerManagerTester {
 
