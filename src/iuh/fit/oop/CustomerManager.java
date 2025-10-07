@@ -1,6 +1,4 @@
-package iuh.fit.oop.manager;
-
-import iuh.fit.oop.entity.Customer;
+package iuh.fit.oop;
 
 public class CustomerManager {
 	private Customer[] customer;

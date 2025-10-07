@@ -1,19 +1,17 @@
-package iuh.fit.oop.manager;
+package iuh.fit.oop;
 
-import iuh.fit.oop.entity.Employees;
-
-public class EmployeesManager {
-	private Employees[] employees;
+public class EmployeeManager {
+	private Employee[] employees;
 	private int size;
 	
-	public EmployeesManager() {
-		employees = new Employees[5];
+	public EmployeeManager() {
+		employees = new Employee[5];
 		size = 0;
 	}
 	
 	public void ensureCapacity() {
 		if(size == employees.length) {
-			Employees[] newArr = new Employees[employees.length * 2];
+			Employee[] newArr = new Employee[employees.length * 2];
 			for (int i = 0; i < size; i++) {
 				newArr[i] = employees[i];
 			}
@@ -21,12 +19,12 @@ public class EmployeesManager {
 		}
 	}
 	
-	public void Add(Employees newEmployees) {
+	public void Add(Employee newEmployees) {
 		ensureCapacity();
 		employees[size++] = newEmployees;
 	}
 	
-	public Employees findById(String id) {
+	public Employee findById(String id) {
         for (int i = 0; i < size; i++) {
             if (employees[i].getId().equalsIgnoreCase(id)) {
                 return employees[i];

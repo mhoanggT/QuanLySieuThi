@@ -1,19 +1,17 @@
-package iuh.fit.oop.manager;
-
-import iuh.fit.oop.entity.Products;
+package iuh.fit.oop;
 
 public class ProductManager {
-	private Products[] products;
+	private Product[] products;
 	private int size;
 	
 	public ProductManager() {
-		products = new Products[5];
+		products = new Product[5];
 		size = 0;
 	}
 	
 	public void ensureCapacity() {
 		if(size == products.length) {
-			Products[] newArr = new Products[products.length * 2];
+			Product[] newArr = new Product[products.length * 2];
 			for (int i = 0; i < size; i++) {
 				newArr[i] = products[i];
 			}
@@ -21,12 +19,12 @@ public class ProductManager {
 		}
 	}
 	
-	public void Add(Products newProduct) {
+	public void Add(Product newProduct) {
 		ensureCapacity();
 		products[size++] = newProduct;
 	}
 	
-	public Products findById(String id) {
+	public Product findById(String id) {
         for (int i = 0; i < size; i++) {
             if (products[i].getId().equalsIgnoreCase(id)) {
                 return products[i];

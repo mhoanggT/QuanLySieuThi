@@ -1,7 +1,8 @@
-package iuh.fit.oop.entity;
+package iuh.fit.oop;
 
 public enum Role {
 	CASHIER,
 	MANAGER,
-	STOCKER
+	STOCKER, 
+	STAFF
 }

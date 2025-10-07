@@ -1,4 +1,4 @@
-package iuh.fit.oop.entity;
+package iuh.fit.oop;
 
 import java.time.LocalDate;
 
@@ -77,13 +77,11 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return String.format("| %s10 | %s20 | %f10 | %d10 | %s10 |",
+		return String.format("| %10s | %20s | %10f | %10d | %10s |",
 				id,
 				name,
 				gender,
 				phone,
 				birthday);
 	}
-	
-	
 }

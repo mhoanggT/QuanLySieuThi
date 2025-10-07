@@ -1,15 +1,15 @@
-package iuh.fit.oop.entity;
+package iuh.fit.oop;
 
-public class Employees {
+public class Employee {
 	private String id;
 	private String name;
 	private Role role;
 	private Gender gender;
 	
-	public Employees() {
+	public Employee() {
 	}
 
-	public Employees(String id, String name, Role role, Gender gender) {
+	public Employee(String id, String name, Role role, Gender gender) {
 		setId(id);
 		setName(name);
 		setRole(role);
@@ -62,12 +62,10 @@ public class Employees {
 
 	@Override
 	public String toString() {
-		return String.format("| %s10 | %s20 | %f10 | %d10 | %s10 |",
+		return String.format("| %10s | %20s | %10f | %10d | %10s |",
 				id,
 				name,
 				role,
 				gender);
 	}
-	
-	
 }

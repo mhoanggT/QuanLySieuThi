@@ -1,4 +1,4 @@
-package iuh.fit.oop.entity;
+package iuh.fit.oop;
 
 public enum Gender {
 	MALE,

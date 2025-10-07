@@ -1,16 +1,16 @@
-package iuh.fit.oop.entity;
+package iuh.fit.oop;
 
-public class Products {
+public class Product {
 	private String id;
 	private String name;
 	private double price;
 	private int quantity;
 	private ProductType type;
 	
-	public Products() {
+	public Product() {
 	}
 
-	public Products(String id, String name, double price, int quantity, ProductType type) {
+	public Product(String id, String name, double price, int quantity, ProductType type) {
 		setId(id);
 		setName(name);
 		setPrice(price);
@@ -75,7 +75,7 @@ public class Products {
 
 	@Override
 	public String toString() {
-		return String.format("| %s10 | %s20 | %f10 | %d10 | %s10 |",
+		return String.format("| %10s | %20s | %10f | %10d | %10s |",
 				id,
 				name,
 				price,
